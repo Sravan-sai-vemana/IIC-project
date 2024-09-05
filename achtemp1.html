@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>achievements</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+
+    .level-block {
+      display: inline-block;
+      margin: 20px;
+      padding: 20px;
+      border: 2px solid #dddddd;
+      border-radius: 10px;
+      width: 300px;
+      height: 350px;
+      transition: all 0.3s ease;
+      cursor: pointer; /* Add cursor */
+    }
+
+    .level-block:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.557);
+      border: 1px solid black;
+    }
+
+    .level-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .level-image {
+      border-radius: 10px;
+      height: 270px;
+      width: 100%;
+      margin-bottom: 10px;
+      object-fit: cover; /* Ensure the image covers the entire space */
+    }
+
+    .level-description {
+      font-size: 16px;
+    }
+
+    #frame{
+      width: 40cm;
+      overflow: hidden;
+      position: relative;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="frame">
+    <div class=" bg-[#2d3091] flex justify-between items-center">
+      <a href="main.php"><img src="./Images/iiclogo.png" class=" clip bg-white px-16 py-4 w-72" /></a>
+      <div class="text-center">
+        <h1 class="text-[#ffee00] text-2xl font-bold">VISHNU INSTITUTE OF TECHNOLOGY</h1>
+        <h1 class="text-white text-3xl font-bold">Institution's Innovation Council</h1>
+      </div>
+      <div class="flex items-center mr-20">
+        <img src="./Images//founder.png" class="w-14" />
+        <div class="divider"></div>
+        <img src="./Images/logo.png" class="w-14 mr-2" />
+        <div class="text-white font-bold">
+          <h1>VIT</h1>
+          <h1>Bhimavaram</h1>
+        </div>
+      </div>
+    </div>
+
+    <center>
+      <br><br>
+
+      <div id="institute-level" class="level-block">
+        <h2 class="level-title">Institution Level</h2>
+        <img class="level-image" src="https://as2.ftcdn.net/v2/jpg/05/55/78/61/1000_F_555786171_94GdahGA1CvTBiyCpOzJCXNo0sYUGgSQ.jpg" >
+      </div>
+
+      <div id="state-level" class="level-block">
+        <h2 class="level-title">State Level</h2>
+        <img class="level-image" src="https://rukminim2.flixcart.com/image/850/1000/k0cqqvk0/puzzle/h/v/y/99-elite-india-map-with-state-capitals-educational-to-sanchi-original-imafkfzpvup5mbxf.jpeg?q=90&crop=false" >
+      </div>
+
+      <div id="national-level" class="level-block">
+        <h2 class="level-title">National Level</h2>
+        <img class="level-image" src="https://wallpapers.com/images/hd/india-map-on-globe-a9aw2ikkyleo5wck.jpg">
+      </div>
+
+    </center>
+    <div class="mt-20 text-center flex items-center justify-center" id="banner">
+      <marquee behavior="scroll" direction="left">
+        <h1 class="text-xl text-white font-semibold">Designed and Developed by <span class="text-[#f9a72a]">DR V Narsimha Raju | P L N Prakash Kumar | V Sravan Sai | K Mani Shankar</span></h1>
+      </marquee>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+    #achi{
+        background-color: rgb(94, 42, 224);
+        color: white;
+        font-size: 40px;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-weight: bolder;
+    }
+    #table1 {
+        text-align: center;
+        border-collapse: collapse;
+        
+        margin: 20px auto;
+        background-color: white;
+    }
+
+    #table1 th,
+    #table1 td {
+        border: 1px solid #dddddd;
+        padding: 8px;
+    }
+
+    #table1 th {
+        background-color: #f2f2f2;
+    }
+
+    #table1 input,select {
+        width: 200px;
+        padding: 8px;
+        border: 2px solid black;
+        border-radius: 5px;
+     }
+     select{
+        text-align: center;
+     }
+    #button1 {
+            text-align: right;
+            margin-top: 15px;
+            margin-right: 24px;
+        }
+
+        #buttontext {
+            background-color: rgb(237, 111, 111);
+            font-size: 20px;
+            font-weight: bold;
+            padding: 8px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .images{
+            border-radius: 50px;
+            height: 550px;
+            width: 350px;
+            margin-left: 30%;
+        }
+        .images1{
+            border-radius: 50px;
+            height: 550px;
+            width: 350px;
+            margin-left: 55%;
+            
+        }
+        .images2{
+            border-radius: 50px;
+            height: 550px;
+            width: 350px;
+            margin-left: 85%;
+        }
+        .images:hover {
+          box-shadow: 0 0 18px rgba(33,33,33,.2); 
+        }
+        .images1:hover {
+          box-shadow: 0 0 18px rgba(33,33,33,.2); 
+        }
+        .images2:hover {
+          box-shadow: 0 0 18px rgba(33,33,33,.2); 
+        }
+        #ach{
+            position: absolute;
+            top: 42%;
+            left: 13%;
+            font-size: 50px;
+        }
+        #ach1{
+            position: absolute;
+            top: 48%;
+            left: 15%;
+            font-size: 50px;
+        }
+        #sta{
+            position: absolute;
+            top: 50%;
+            left: 39%;
+            font-size: 50px;
+      }
+      #nat{
+        position: absolute;
+            top: 42%;
+            left: 70%;
+            font-size: 50px;
+      }
+      #nat1{
+        position: absolute;
+            top: 48%;
+            left: 73%;
+            font-size: 50px;
+      }
+      #frame{
+        width: 40cm;
+        overflow: hidden;
+        position: relative;
+        margin: auto;
+    }
+    a{
+      display: inline-block;
+    }
+      </style>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+      <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <title>achievements</title>
+</head>
+
+<body>
+  <div id="frame">
+    <div class=" bg-[#2d3091] flex justify-between items-center">
+      <a href="main.php"><img src="./Images/iiclogo.png" class=" clip bg-white px-16 py-4 w-72" /></a>
+      <div class="text-center">
+        <h1 class="text-[#ffee00] text-2xl font-bold">VISHNU INSTITUTE  OF TECHNOLOGY</h1>
+        <h1 class="text-white text-3xl font-bold">Institution's Innovation Council</h1>
+      </div>
+      <div class="flex items-center mr-20">
+        <img src="./Images//founder.png" class="w-14" />
+        <div class="divider"></div>
+        <img src="./Images/logo.png" class="w-14 mr-2" />
+        <div class="text-white font-bold">
+          <h1>VIT</h1>
+          <h1>Bhimavaram</h1>
+        </div>
+      </div>
+    </div>
+        <br><br> 
+        <a href="achievement.php"><p id="ach">COLLEGE</p><p id="ach1">LEVEL</p>
+          <figure><img class="images" src="https://thumbs.dreamstime.com/b/high-school-college-students-studying-reading-together-high-school-college-students-studying-reading-together-105156570.jpg"> </figure>
+        </a>
+        <a href="activity.php"><p id="sta">STATE LEVEL</p>
+            <figure> <img class="images1" src="https://assets.thehansindia.com/h-upload/feeds/2019/03/14/500x300_129570-amaravathi.jpg"> </figure>
+          </a>
+
+        <a href="activity.php"><p id="nat">NATIONAL</p><p id="nat1">LEVEL</p>
+          <figure> <img class="images2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmg0NBMC2zjvx1kbgf0v3EsUz14OMK5y8Sx4kpfFYKOW9a8ZQsGadnUwFscrdWsEAKp0o&usqp=CAU"> </figure>
+        </a>
+    <div class="mt-20 text-center flex items-center justify-center" id="banner">
+      <marquee behavior="scroll" direction="left">
+        <h1 class="text-xl text-white font-semibold">Designed and Developed by <span class="text-[#f9a72a]">DR V Narsimha Raju  |  P L N Prakash Kumar  |  V Sravan Sai  |  K Mani Shankar</span></h1>
+      </marquee>
+    </div>
+
+  </div>
+  
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url("/bacground.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            height: 900px;
+            width: 900px;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+            font-weight: bolder;
+            font-size: 50px;
+        }
+
+        h2 {
+            margin-top: 10px;
+            font-weight: normal;
+            color: #555;
+            font-size: 40px;
+        }
+
+        h3 {
+            font-weight: bold;
+            width: 150px;
+            background-color: #555;
+            color: #e9dede;
+            margin-bottom: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .form-group {
+            width: 60%;
+            margin-top: -230px;
+            margin-bottom: 20px;
+            margin-left: 40%;
+            
+        }
+
+        .form-group1 {
+            width: 60%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 40%;
+            
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 50%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .forgot-password {
+            padding-top: 30px;
+            text-align: right;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        #middle-box {
+            background-color: rgb(173, 187, 187);
+            padding: 20px;
+            border-radius: 8px;
+            height: 250px;
+        }
+
+        .left-img {
+            float: left;
+            margin-top: 25px;
+            text-align: center;
+            padding-bottom: 20px;
+            margin-left: 5%;
+        }
+
+        .left-img img {
+            width: 300px;
+        }
+
+        .submit-btn {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .registration-btn {
+            background-color: #6488da;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        #line{
+            width: 2px;
+            height: 250px;
+            background-color: black;
+            margin-left: 45%;
+        }
+
+        .submit-btn:hover,
+        .registration-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+            <h1>Vishnu Institute of Technology</h1>
+            <h2>Institute's Innovation Council</h2>
+            <center><h3>Institute Portal</h3></center>
+        <div id="middle-box">
+            <div class="left-img">
+                <a href="index.html"><img src="./Images/iiclogo.png  " alt="left image"></a>
+            </div>
+            <div id="line">
+
+            </div>
+            <form action="signin.php" method="POST">
+            <div class="form-group">
+                <label for="email">Username:</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group1">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+        </div>
+            <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="submit-btn">Login</button><br><br>
+        </form>
+            
+        
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+
+    #first_image{
+      margin-top: 70px;
+    }
+      </style>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+      <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <title>main page</title>
+</head>
+
+<body>
+  <div>
+    <div class=" bg-[#2d3091] flex justify-between items-center">
+      <img src="./Images/iiclogo.png" class=" clip bg-white px-16 py-4 w-72" />
+      <div class="text-center">
+        <h1 class="text-[#ffee00] text-2xl font-bold">VISHNU INSTITUTE  OF TECHNOLOGY</h1>
+        <h1 class="text-white text-3xl font-bold">Institution's Innovation Council</h1>
+      </div>
+      <div class="flex items-center mr-20">
+        <img src="./Images//founder.png" class="w-14" />
+        <div class="divider"></div>
+        <img src="./Images/logo.png" class="w-14 mr-2" />
+        <div class="text-white font-bold">
+          <h1>VIT</h1>
+          <h1>Bhimavaram</h1>
+        </div>
+      </div>
+    </div>
+    <div
+      class="px-2 py-2 flex justify-between items-center bg-[#f8d303] text-[#2d3091]  py-1 text-sm font-semibold shadow z-10">
+      <div class="select">
+        <h1>About Us<i class="ri-arrow-drop-down-fill "></i></h1>
+        <div class="options">
+          <a>About MIC</a>
+          <a>Implementation Team</a>
+        </div>
+      </div>
+      <div class="select">
+        <h1>IIC 2023-24<i class="ri-arrow-drop-down-fill "></i></h1>
+        <div class="options">
+          <a>IIC Calender Activities 2024</a>
+          <a>IIC Celebration Activities 2024</a>
+          <a>List Of Approved Institutes</a>
+        </div>
+      </div>
+      <div class="select">
+        <h1>At A Glance<i class="ri-arrow-drop-down-fill "></i></h1>
+        <div class="options">
+          <a>IIC 2018-19</a>
+          <a>IIC 2019-20</a>
+          <a>IIC 2020-21</a>
+          <a>IIC 2021-22</a>
+          <a>IIC 2022-23</a>
+        </div>
+      </div>
+      <div class="select">
+        <h1>Major Activities<i class="ri-arrow-drop-down-fill "></i></h1>
+        <div class="options">
+          <a>Innovation Ambassador</a>
+          <a>Inmpact Lecture Series</a>
+          <a>Online Session</a>
+          <a>National Innovation Contest</a>
+          <a>International Exposure</a>
+          <a>Mentor Mentee Program</a>
+          <a>YUKIT Innovation Repository</a>
+          <a>National Technology Week</a>
+        </div>
+      </div>
+      <div class="select">
+        <h1>Resources & Referrals<i class="ri-arrow-drop-down-fill "></i></h1>
+        <div class="options">
+          <a>List of Pre-Incubators & Incubators</a>
+          <a>List of Innovation Ambassdors</a>
+          <a>Download</a>
+          <a>IIC Guide and Portal Manual</a>
+        </div>
+      </div>
+      <div class="select">
+        <a>Notification</a>
+      </div>
+      <div class="select">
+        <h1>Gallery<i class="ri-arrow-drop-down-fill "></i></h1>
+        <div class="options">
+          <a>Photo Gallery</a>
+          <a>Video Gallery</a>
+          <a>Media</a>
+          <a>National Technology Week 2023</a>
+        </div>
+      </div>
+      <div class="select">
+        <a>Contact Us</a>
+      </div>
+      <a href="login.html" class="bg-[#2d3091] px-4 py-1 text-white ">Login</a>
+      <button class="bg-[#2d3091]  px-4 py-1 text-white ">YUKIT Innovation Repository</button>
+      <button class="bg-[#c71e23] px-4 py-1 text-white">IIC Impact</button>
+      <button class="bg-[#c71e23] px-4 py-1 text-white animate">Regional Meet Invite</button>
+    </div>
+    <div>
+      <div class="w-[100%] mx-auto -z-10">
+
+        <div id="default-carousel" class="relative" data-carousel="static">
+          <div class="overflow-hidden relative w-[100%] h-56 sm:h-64 xl:h-80 2xl:h-[460px]">
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+
+              <img src="https://vishnu.edu.in/images/2023-SIH.jpg" id="first_image"
+                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="./Images/iic-360-degree-approach-bg.jpg"
+                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="./Images/impect-lecture-bg.png"
+                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+          </div>
+          <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+              data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+              data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+              data-carousel-slide-to="2"></button>
+          </div>
+          <button type="button"
+            class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+              class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+              </svg>
+              <span class="hidden">Previous</span>
+            </span>
+          </button>
+          <button type="button"
+            class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+              class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+              <span class="hidden">Next</span>
+            </span>
+          </button>
+        </div>
+
+        <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+      </div>
+    </div>
+    <div>
+      <div class="text-center mt-10">
+        <h1 class="text-3xl text-[#012e5b] font-semibold">About IIC</h1>
+        <div class="w-8 h-2 bg-[#f9a72a] mx-auto mt-3"></div>
+      </div>
+      <div class="flex justify-between items-center px-72 mt-10">
+        <div class="w-6/12 opacity-70 px-10 text-justify">
+          <h1>icia, distinctio provident consequatur
+            beatae possimus nesciunt veritatis, nobis adipisci veniam omnis repellendus neque itaque culpa cupiditate
+            tempora obcaecati aliquam deserunt? Assumenda aliquam repudiandae debitis ab vero deserunt possimus fugiat
+            dicta similique quia maiores, ipsam nemo labore animi sapiente fuga aspernatur voluptate dolore qui, vel id
+            eum atque at quo? Doloremque, porro dolores dolorum aperiam eius ullam magnam ab nemo consectetur debitis
+            eum
+            id ex quibusdam natus inventore sunt adipisci unde sequi harum, architecto at ducimus! Ut magni ad debitis
+            rerum laborum optio soluta distinctio odit eligendi neque, autem, consectetur et. Voluptas error soluta
+            magni
+            necessitatibus tenetur aliquam delectus sit cum, itaque optio ex sint fugiat cumque quasi sapiente, quaerat
+            libero saepe. laudantium doloribus animi obcaecati! Rerum aliquid velit
+            repudiandae sequi doloribus dignissimos odio? Assumenda quo tempora distinctio libero saepe, quisquam eum
+            aliquid quasi earum iusto ullam qui, nulla dolor odio. Deserunt beatae suscipit pariatur fuga officiis
+            excepturi quae ab, mollitia id repellat!</h1>
+        </div>
+        <div class="w-6/12">
+          <img src="./Images/IIC-Guided-Activities.png" class="w-10/12" />
+        </div>
+      </div>
+    </div>
+    <center>
+      <div class="mt-20 text-center flex items-center justify-center" id="banner">
+          <marquee behavior="scroll" direction="left">
+              <h1 class="text-xl text-white font-semibold">Designed and Developed by <span class="text-[#f9a72a]">DR V Narsimha Raju | P L N Prakash Kumar | Vemana Sravan Sai | Katta Mani Shankar</span></h1>
+          </marquee>
+      </div>
+  </center>
+
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>

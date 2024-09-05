@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+body{
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+.clip{
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 16% 100%);
+}
+.divider
+{
+    width: 50px;
+    height: 2px;
+    background-color: #414370;
+    transform: rotate(90deg);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.shadow{
+   -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+   -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+   box-shadow: 0px -4px 10px rgba(29, 29, 29, 0.75);
+}
+.select{
+    width: max-content;
+}
+.select .options{
+    position: absolute;
+    display: none;
+    z-index: 70;
+}
+.select:hover .options{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 20px;
+    -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+   -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+   box-shadow: 0px -3px 8px  rgba(29, 29, 29, 0.75);
+}
+.select .options a{
+    padding: 3px 1px;
+    width: auto;
+}
+.select .options a:hover{
+    background-color: #ffe000;
+}
+#banner{
+    background-image: url("./Images/bg-1.jpg");
+    width: 100%;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+}
+.animate{
+    animation-name: example;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes example{
+    from {transform: scale(1);}
+    to {transform: scale(1.05);}
+}
+.mar{
+    animation-duration: 5s;
+    animation-name: infiniteScroll;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}

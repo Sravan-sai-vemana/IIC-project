@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Form Builder</title>
+</head>
+<body>
+    <h1>Create a New Form</h1>
+    <form id="formBuilder" method="POST" action="create_form.php">
+        <label for="formName">Form Name:</label>
+        <input type="text" id="formName" name="formName" required><br><br>
+        
+        <div id="fields">
+            <div class="field-group">
+                <label>Field Name:</label>
+                <input type="text" name="fields[]" required>
+                <label>Field Type:</label>
+                <select name="types[]" class="field-type" onchange="toggleOptions(this)">
+                    <option value="VARCHAR(255)">Text</option>
+                    <option value="INT">Number</option>
+                    <option value="DATE">Date</option>
+                    <option value="DROPDOWN">Dropdown</option>
+                </select><br><br>
+                <div class="dropdown-options" style="display: none;">
+                    <label>Dropdown Options (comma separated):</label>
+                    <input type="text" name="dropdown_options[]" placeholder="Option1, Option2, Option3"><br><br>
+                </div>
+            </div>
+        </div>
+        
+        <button type="button" onclick="addField()">Add Another Field</button><br><br>
+        <input type="submit" value="Create Form">
+    </form>
+
+    <script>
+        function addField() {
+            var div = document.createElement('div');
+            div.classList.add('field-group');
+            div.innerHTML = `
+                <label>Field Name:</label>
+                <input type="text" name="fields[]" required>
+                <label>Field Type:</label>
+                <select name="types[]" class="field-type" onchange="toggleOptions(this)">
+                    <option value="VARCHAR(255)">Text</option>
+                    <option value="INT">Number</option>
+                    <option value="DATE">Date</option>
+                    <option value="DROPDOWN">Dropdown</option>
+                </select><br><br>
+                <div class="dropdown-options" style="display: none;">
+                    <label>Dropdown Options (comma separated):</label>
+                    <input type="text" name="dropdown_options[]" placeholder="Option1, Option2, Option3"><br><br>
+                </div>
+            `;
+            document.getElementById('fields').appendChild(div);
+        }
+
+        function toggleOptions(selectElement) {
+            var dropdownOptions = selectElement.parentNode.querySelector('.dropdown-options');
+            if (selectElement.value === 'DROPDOWN') {
+                dropdownOptions.style.display = 'block';
+            } else {
+                dropdownOptions.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

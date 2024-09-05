@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        select {
+            outline: none;
+        }
+
+        nav {
+            display: flex;
+            background-color: rgb(84, 159, 206);
+            padding: 10px;
+            color: black;
+        }
+
+        #logo-left {
+            max-width: 200px;
+            height: 180px;
+            margin-left: 460px;
+            margin-right: 20px;
+        }
+
+        #logo-right {
+            max-width: 160px;
+            height: auto;
+            margin-right: 40px;
+            margin-bottom: 20px;
+            margin-left: 55px;
+        }
+        #logo-right1 {
+            max-width: 160px;
+            height: auto;
+            margin-right: 10px;
+        }
+        #text2 {
+            text-align: center;
+        }
+
+        #text1 {
+            text-align: center;
+            margin-top: 40px;
+            font-family: "Verdana";
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        nav.second-nav {
+            background-color: rgb(148, 220, 231);
+            padding: 10px;
+            height: 35px;
+            text-align: center;
+            color: blue;
+        }
+
+        nav.second-nav a {
+            color: blue;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        #active {
+            background-color: rgba(62, 59, 59, 0.548);
+            transition: .5s;
+        }
+
+        .scrolling-images {
+            margin: 50px;
+            overflow: hidden;
+        }
+
+        .scrolling-images img {
+            max-width: 400px;
+            height: 400px;
+            margin-right: 10px;
+        }
+
+        #achi {
+            background-color: rgb(152, 207, 207);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+            padding: 2px;
+        }
+
+        #table1 {
+            text-align: center;
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        td {
+            padding: 8px;
+            font-weight: bold;
+        }
+
+        #button1 {
+            text-align: right;
+            margin-top: 15px;
+            margin-right: 24px;
+        }
+
+        #buttontext {
+            background-color: rgb(237, 111, 111);
+            font-size: 20px;
+            font-weight: bold;
+            padding: 8px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <img id="logo-left" src="/img1.png" alt="Left Image">
+        <div>
+            <h1 id="text1">VISHNU INSTITUTE OF TECHNOLOGY</h1>
+            <h2 id="text2">INSTITUTE'S INNOVATION COUNCIL</h2>
+        </div>
+        <img id="logo-right" src="/img2.png" alt="Right Image">
+        <img id="logo-right1" src="/founder.png" alt="Right Image">
+    </nav>
+
+    <nav class="second-nav">
+        <h4>About Us
+            <select>
+                <option></option>
+                <option>About VIT</option>
+                <option>About MIE</option>
+            </select>
+        </h4>
+        <h4>IIC 23-24
+            <select id="select1">
+                <option></option>
+                <option>About VIT</option>
+                <option>About MIE</option>
+            </select>
+        </h4>
+        <h4>At a Glance
+            <select id="select1">
+                <option></option>
+                <option>About VIT</option>
+                <option>About MIE</option>
+            </select>
+        </h4>
+    
+    
+        <h4>Major Activities
+            <select id="select1">
+                <option></option>
+                <option>About VIT</option>
+                <option>About MIE</option>
+            </select>
+        </h4>
+        <h4>Resources
+            <select id="select1">
+                <option></option>
+                <option>About VIT</option>
+                <option>About MIE</option>
+            </select>
+        </h4>
+        <h4>Gallery
+            <select id="select1">
+                <option></option>
+                <option>About VIT</option>
+                <option>About MIE</option>
+            </select>
+        </h4>    
+        <a href="helpme.html">Notification</a>
+        <a href="helpme.html">CONTACT US</a>
+        <a href="helpme.html" id="active">Log In</a>
+    </nav>
+
+    <div class="scrolling-images">
+        <marquee behavior="scroll" direction="left">
+            <img src="/img3.png" alt="Image 1">
+            <img src="/img4.jpg" alt="Image 2">
+            <img src="/img3.png" alt="Image 3">
+        </marquee>
+    </div>
+
+    <p id="achi">ACHIEVEMENTS</p>
+    <center>
+        <table border="3" id="table1">
+            <tr>
+                <td>S.NO</td>
+                <td>Date Calender</td>
+                <td>Student Name</td>
+                <td>Branch</td>
+                <td>Year</td>
+                <td>Event Name</td>
+                <td>Held in College/Prize Won</td>
+                <td>Amount</td>
+                <td>Certificates</td>
+            </tr>
+            <tr>
+                <td><input type="number"></td>
+                <td><input type="date"></td>
+                <td><input type="text"></td>
+                <td><input type="number"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="number"></td>
+                <td><input type="file"></td>
+            </tr>
+        </table>
+    </center>
+
+    <div id="button1">
+        <input type="button" value="Add Record" id="buttontext"><br><br><br>
+        <input type="button" value=" Download " id="buttontext">
+    </div>
+
+    <p id="achi">ACTIVITIES</p>
+    <div>
+        <center>
+            <table border="3" id="table1">
+                <tr>
+                    <td>Start Date</td>
+                    <td>End Date</td>
+                    <td>No.Of Hours</td>
+                    <td>Name of Event</td>
+                    <td>Resource person Name</td>
+                    <td>Banner</td>
+                    <td>Coordinator</td>
+                    <td>Face ok Link</td>
+                    <td>Instagram</td>
+                    <td>Linkedin</td>
+                    <td>Twitter(x)</td>
+                    <td>Youtube</td>
+                    <td>Select</td>
+                    <td>Youtube</td>
+                    <td>Youtube</td>
+                    </tr>
+                <tr>
+                    <td><input type="number"></td>
+                    <td><input type="date"></td>
+                    <td><input type="date"></td>
+                    <td><input type="number"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+        </center>
+    </div>
+    <div id="button1">
+        <input type="button" value="Add Record" id="buttontext"><br><br><br>
+        <input type="button" value=" Download " id="buttontext">
+    </div>
+</body>
+
+</html>

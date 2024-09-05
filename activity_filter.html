@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+        }
+
+        #achi {
+            background-color: rgb(94, 42, 224);
+            color: white;
+            font-size: 40px;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 30px 0 20px;
+            font-weight: bolder;
+        }
+
+        #table1 {
+            text-align: center;
+            border-collapse: collapse;
+            margin: 20px auto;
+            background-color: white;
+        }
+
+        #table1 th,
+        #table1 td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+        }
+
+        #table1 th {
+            background-color: #f2f2f2;
+        }
+
+        #table1 input, select {
+            width: 200px;
+            padding: 8px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        select {
+            text-align: center;
+        }
+
+        #button1 {
+            text-align: right;
+            margin-top: 15px;
+            margin-right: 24px;
+        }
+
+        #buttontext {
+            background-color: rgb(237, 111, 111);
+            font-size: 20px;
+            font-weight: bold;
+            padding: 8px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+    <title>activity</title>
+</head>
+
+<body>
+    <div class="bg-[#2d3091] flex justify-between items-center">
+        <a href="main.php">
+            <img src="./Images/iiclogo.png" class="clip bg-white px-16 py-4 w-72" />
+        </a>
+        <div class="text-center">
+            <h1 class="text-[#ffee00] text-2xl font-bold">VISHNU INSTITUTE OF TECHNOLOGY</h1>
+            <h1 class="text-white text-3xl font-bold">Institution's Innovation Council</h1>
+        </div>
+        <div class="flex items-center mr-20">
+            <img src="./Images/founder.png" class="w-14" />
+            <div class="divider"></div>
+            <img src="./Images/logo.png" class="w-14 mr-2" />
+            <div class="text-white font-bold">
+                <h1>VIT</h1>
+                <h1>Bhimavaram</h1>
+            </div>
+        </div>
+    </div>
+
+    <center>
+        <p id="achi">ACTIVITY - SEARCH</p>
+
+        <form action="act_filter.php" method="POST" enctype="multipart/form-data">
+            <table border="3" id="table1">
+                <tr>
+                    <td>Start Date</td>
+                    <td><input type="date" name="startDate"></td>
+                </tr>
+                <tr>
+                    <td>End Date</td>
+                    <td><input type="date" name="endDate"></td>
+                </tr>
+                <tr>
+                    <td>No.Of Hours</td>
+                    <td><input type="number" name="hours"></td>
+                </tr>
+                <tr>
+                    <td>Name of Event</td>
+                    <td><input type="text" name="eventName"></td>
+                </tr>
+                
+                <tr>
+                    <td>Coordinator</td>
+                    <td><input type="text" name="coordinator"></td>
+                </tr>
+                <tr>
+                    <td>Prizes</td>
+                    <td><input type="text" name="position"></td>
+                </tr>
+                <tr>
+                    <td>Amount Spent</td>
+                    <td><input type="number" name="amount"></td>
+                </tr>
+            </table>
+            <input type="submit" value="Search" id="buttontext"><br>
+        </form>
+    </center>
+
+    <center>
+        <div class="mt-20 text-center flex items-center justify-center" id="banner">
+            <marquee>
+                <h1 class="text-xl text-white font-semibold">Designed and Developed by
+                    <span class="text-[#f9a72a]">DR V Narsimha Raju | P L N Prakash Kumar | Vemana Sravan Sai | Katta Mani Shankar</span>
+                </h1>
+            </marquee>
+        </div>
+    </center>
+</body>
+
+<script>
+    
+</script>
+
+</html>
